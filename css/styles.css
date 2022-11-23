@@ -59,6 +59,8 @@ img {
 
 /* END Reset */
 
+/* General */
+
 body {
     color: var(--primary-color);
 
@@ -106,6 +108,22 @@ body {
 
 .cards-set-item {
    flex-basis: calc((100% - (var(--indent) * (var(--cards-in-row) - 1))) / (var(--cards-in-row)));
+}
+
+/* index.html -> h2 */
+
+.features__title,
+.activities__title,
+.team__title,
+.clients__title {
+    margin-bottom: 50px;
+
+    color: var(--secondary-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
 }
 
 
@@ -239,7 +257,7 @@ body {
 
 /* Hero */
 
-.hero.section {    
+.hero {    
     padding: 200px 0;
     text-align: center;
     
@@ -254,7 +272,7 @@ body {
 
 }
 
-.hero-title {
+.hero__title {
     margin-bottom: 30px;
 
     color: var(--logo-secondary-color);
@@ -266,7 +284,7 @@ body {
     text-transform: uppercase;
 }
 
-.hero-btn {
+.hero__btn {
     padding: 10px 32px;
     border-width: 0;
     min-width: 216px;
@@ -285,35 +303,21 @@ body {
     transition: background-color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
     background-color: var(--hero-btn-backhround-hover);
 }
 
-/* index.html -> h2 */
 
-.features-title,
-.activities-title,
-.team-title, 
-.clients-title {
-margin-bottom: 50px;
-
-color: var(--secondary-color);
-
-font-weight: 700;
-font-size: 36px;
-line-height: calc(42 / 36);
-text-align: center;
-}
 
 
 /* Features */
 
-.features.section {
+.features {
     --cards-in-row: 4;
 }
 
-.features-icon-container {
+.features__wrapper {
     display: flex;
     height: 120px;
     justify-content: center;
@@ -323,7 +327,7 @@ text-align: center;
     margin-bottom: 30px;
 }
 
-.features-subtitle {
+.features__subtitle {
     margin-bottom: 10px;
 
     color: var(--secondary-color);
@@ -334,22 +338,22 @@ text-align: center;
     text-transform: uppercase;
 }
 
-.features-text {
+.features__text {
     line-height: calc(24 / 14);
 }
 
 
 /* Our activities */
 
-.activities.section {
+.activities {
     padding-top: 0;
 }
 
-.activities-item {
+.activities__item {
     position: relative;
 }
 
-.activities .overlay {
+.activities__overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -358,7 +362,7 @@ text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.activities .overlay-text {
+.activities__overlay-text {
     font-weight: 700;
     line-height: calc(16 / 14);
     text-align: center;
@@ -370,19 +374,20 @@ text-align: center;
 
 /* Our team */
 
-.team.section {
+
+.team {
     background-color: var(--team-section-bg-color);
     --cards-in-row: 4;
 
 }
 
-.team-card {
+.team__card {
     background-color: var(--team-card-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-subtitle {
+.team__subtitle {
     margin-bottom: 10px;
 
     color: var(--secondary-color);
@@ -393,27 +398,27 @@ text-align: center;
     text-align: center;
 }
 
-.team-text {
+.team__text {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
     margin-bottom: 16px;
 }
 
-.team-content {
+.team__content {
     padding: 30px 32px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--logo-secondary-color);
 }
 
-.team .social-list {
+.team__socials {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.social-list-link {
+.team__socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,24 +431,24 @@ text-align: center;
     transition: background-color var(--hover-focus-duration) var(--hover-focus-timing-function), color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
-.social-list-link:hover, 
-.social-list-link:focus {
+.team__socials-link:hover, 
+.team__socials-link:focus {
     color: var(--socials-secondary-fill);
     background-color: var(--brand-color);
 }
 
-.social-list-icon {
+.team__socials-icon {
     fill: currentColor;
 }
 
 
 /* Clients */
 
-.clients.section {
+.clients {
     --cards-in-row: 6;
 }
 
-.clients-logo {
+.clients__logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -455,12 +460,12 @@ text-align: center;
     transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
 } 
 
-.clients-logo:hover, 
-.clients-logo:focus {
+.clients__logo:hover, 
+.clients__logo:focus {
     color: var(--brand-color);
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }
 
