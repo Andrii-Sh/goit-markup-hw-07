@@ -1,4 +1,4 @@
-    :root {
+    /* :root {
     --primary-color: #757575;
     --secondary-color: #212121;
     --brand-color: #2196F3;
@@ -27,13 +27,13 @@
     --cards-in-row: 3;
     --hover-focus-duration: 250ms;
     --hover-focus-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* General */
 
 /* Reset */
 
-h1, h2, h3, h4, h5, h6, p {
+/* h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
@@ -49,19 +49,14 @@ h1, h2, h3, h4, h5, h6, p {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 /* END Reset */
 
 /* General */
 
-body {
+/* body {
     color: var(--primary-color);
 
     font-family: var(--primary-font-family);
@@ -86,7 +81,13 @@ body {
     border-radius: 4px;
 }
 
-.visually-hidden {
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+/* .visually-hidden {
     color: rgba(0, 0, 0, 0);
     position: absolute;
     width: 1px;
@@ -98,9 +99,9 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
-.cards-set {
+/* .cards-set {
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
@@ -108,11 +109,11 @@ body {
 
 .cards-set-item {
    flex-basis: calc((100% - (var(--indent) * (var(--cards-in-row) - 1))) / (var(--cards-in-row)));
-}
+} */
 
 /* index.html -> h2 */
 
-.features__title,
+/* .features__title,
 .activities__title,
 .team__title,
 .clients__title {
@@ -124,11 +125,11 @@ body {
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
-}
+} */
 
 
 /* logo */
-
+/* 
 .logo {
     font-family: var(--logo-font-family);
     font-weight: 700;
@@ -147,13 +148,13 @@ body {
 
 .logo__label--white {
     color: var(--logo-secondary-color)
-}
+} */
 
 
 
 /* Header */
 
-.header {
+/* .header {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -164,11 +165,11 @@ body {
 
 .header__logo {
     margin-right: 93px;
-    /* 1 px для нижнього паддінга додається рамкою хедера */
+    
     padding: 24px 0 24px 0;
-}
+} */
 
-.site-nav {
+/* .site-nav {
     display: flex;
 }
 
@@ -192,7 +193,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 32px 2px 31px 2px; /* лівий та правий паддінги взяти орієнтовно (для симетричності нижньої декоративної риски), так як на макеті у Студії значення 1/2 px, а у Портфоліо 3/3 px */
+    padding: 32px 2px 31px 2px; 
 
     color: var(--secondary-color);
 
@@ -248,12 +249,12 @@ body {
 .auth-nav__icon {
     fill: currentColor;
     margin-right: 10px;
-}
+} */
 
 
 /* Hero */
 
-.hero {    
+/* .hero {    
     padding: 200px 0;
     text-align: center;
     
@@ -302,13 +303,13 @@ body {
 .hero__btn:hover,
 .hero__btn:focus {
     background-color: var(--hero-btn-backhround-hover);
-}
+} */
 
 
 
 
 /* Features */
-
+/* 
 .features {
     --cards-in-row: 4;
 }
@@ -336,12 +337,12 @@ body {
 
 .features__text {
     line-height: calc(24 / 14);
-}
+} */
 
 
 /* Our activities */
 
-.activities {
+/* .activities {
     padding-top: 0;
 }
 
@@ -366,12 +367,12 @@ body {
     text-transform: uppercase;
     
     color: var(--team-card-bg-color);
-}
+} */
 
 /* Our team */
 
 
-.team {
+/* .team {
     background-color: var(--team-section-bg-color);
     --cards-in-row: 4;
 
@@ -435,12 +436,12 @@ body {
 
 .team__socials-icon {
     fill: currentColor;
-}
+} */
 
 
 /* Clients */
 
-.clients {
+/* .clients {
     --cards-in-row: 6;
 }
 
@@ -463,12 +464,12 @@ body {
 
 .clients__icon {
     fill: currentColor;
-}
+} */
 
 
 /* footer */
 
-.footer {
+/* .footer {
     background-color: var(--hero-and-footer-background-color);
     padding: 60px 0;
 }
@@ -481,9 +482,9 @@ body {
 
 .footer__logo {
     margin-bottom: 20px;
-}
+} */
 
-.socials {
+/* .socials {
     align-items: baseline;
 }
 
@@ -542,7 +543,6 @@ body {
 .subscribe-form__input {
     width: 358px;
     height: 50px;
-    /* margin-right: 12px; */
     padding: 15px 16px;
 
     font-size: 16px;
@@ -562,9 +562,9 @@ body {
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
     color: var(--address-footer-color);
-}
+} */
 
-.subscribe__btn, 
+/* .subscribe__btn, 
 .modal__send-btn {
     display: flex;
     align-items: center;
@@ -577,7 +577,6 @@ body {
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    /* border-color: var(--brand-color); */
     border-width: 0;
 
     font-weight: 700;
@@ -585,13 +584,13 @@ body {
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
     color: var(--logo-secondary-color);
-}
+} */
 
 
 
 /* address */
 
-.address__link {
+/* .address__link {
     color: var(--address-footer-color);
     font-style: normal;
         
@@ -613,12 +612,12 @@ body {
 
 .address__item:not(:last-child) {
     margin-bottom: 9px;
-}
+} */
 
 
 /* Portfolio */
 
-.portfolio__card {
+/* .portfolio__card {
     background: var(--portfolio-card-bg-color);
 }
 
@@ -647,13 +646,6 @@ body {
     border-bottom: 1px solid var(--portfolio-content-border-color);
     border-left: 1px solid var(--portfolio-content-border-color);
 }
-
-.portfolio__btn-list {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 50px;
-    }
 
 .portfolio__subtitle {
     margin-bottom: 4px;
@@ -705,10 +697,17 @@ body {
     letter-spacing: 0.03em;
     
     color: var(--portfolio-card-bg-color);
-}
+} */
 
 
 /* Portfolio - buttons */
+/* 
+.portfolio__btn-list {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
 
 .portfolio__btn {
     padding: 6px 22px;
@@ -743,11 +742,11 @@ body {
     color: var(--logo-secondary-color);
     background-color: var(--brand-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* MODAL */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -818,7 +817,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    /* margin: 75px 40px 0; */
 }
 
 .modal__header {
@@ -977,4 +975,4 @@ body {
 .modal__send-btn:hover,
 .modal__send-btn:focus {
     background-color: var(--hero-btn-backhround-hover);
-}
+} */
