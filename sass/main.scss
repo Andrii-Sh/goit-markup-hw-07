@@ -2,6 +2,7 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
+@import './utils/mixins';
 
 //base styles
 @import './base/reset';
@@ -13,9 +14,6 @@
 //components styles
 @import './components/section';
 @import './components/container';
-@import './components/button';
-@import './components/img';
-@import './components/titels';
 @import './components/logo';
 @import './components/header';
 @import './components/site-nav';

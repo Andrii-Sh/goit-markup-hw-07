@@ -69,7 +69,6 @@
 .modal-form {
     display: flex;
     flex-direction: column;
-    justify-items: center;
 }
 
 .modal__header {
@@ -223,30 +222,10 @@
 }
 
 .modal__send-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    @include primary-btn();
 
-    width: 200px;
-    height: 50px;
     margin-left: auto;
     margin-right: auto;
 
-    background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border-width: 0;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
-    color: var(--logo-secondary-color);
-
-    transition: background-color var(--hover-focus-duration) var(--hover-focus-timing-function);
-
-    &:hover, &:focus {
-        background-color: var(--hero-btn-backhround-hover);
-    }
 }

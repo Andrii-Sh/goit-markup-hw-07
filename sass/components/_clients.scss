@@ -2,6 +2,10 @@
     --cards-in-row: 6;
 }
 
+.clients__title {
+    @extend %titles;
+}
+
 .clients__logo {
     display: flex;
     justify-content: center;

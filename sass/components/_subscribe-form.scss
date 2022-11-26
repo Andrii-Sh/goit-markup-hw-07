@@ -33,23 +33,10 @@
 }
 
 .subscribe__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include primary-btn();
+
     gap: 10px;
 
-    width: 200px;
-    height: 50px;
-
-    background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border-width: 0;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
-    color: var(--logo-secondary-color);
 }
 

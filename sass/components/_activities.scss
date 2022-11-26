@@ -2,6 +2,10 @@
     padding-top: 0;
 }
 
+.activities__title {
+    @extend %titles;
+}
+
 .activities__item {
     position: relative;
 }
