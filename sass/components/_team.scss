@@ -1,7 +1,9 @@
 .team {
-    background-color: var(--team-section-bg-color);
+    @include section();
+    
     --cards-in-row: 4;
 
+    background-color: var(--team-section-bg-color);
 }
 
 .team__title {

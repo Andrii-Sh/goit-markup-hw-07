@@ -1,4 +1,4 @@
-//utils stules
+//utils styles
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
@@ -12,7 +12,6 @@
 
 
 //components styles
-@import './components/section';
 @import './components/container';
 @import './components/logo';
 @import './components/header';
@@ -27,6 +26,7 @@
 @import './components/address';
 @import './components/socials';
 @import './components/subscribe-form';
-@import './components/portfolio-btn';
 @import './components/portfolio';
+@import './components/portfolio-btn';
+@import './components/portfolio-card';
 @import './components/modal';

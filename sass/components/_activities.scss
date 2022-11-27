@@ -1,5 +1,6 @@
 .activities {
     padding-top: 0;
+    @include section(0);
 }
 
 .activities__title {

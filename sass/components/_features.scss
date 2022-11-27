@@ -1,4 +1,5 @@
 .features {
+    @include section();
     --cards-in-row: 4;
 }
 

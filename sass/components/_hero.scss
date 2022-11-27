@@ -1,5 +1,5 @@
 .hero {
-    padding: 200px 0;
+    @include section(200px, 200px);
 
     height: 600px;
     max-width: 1600px;
@@ -24,6 +24,7 @@
 
     color: var(--logo-secondary-color);
 
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;

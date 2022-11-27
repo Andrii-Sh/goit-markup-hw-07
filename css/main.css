@@ -132,10 +132,6 @@ body {
   border-radius: 2px;
 }
 
-.section {
-  padding: 94px 0;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -261,7 +257,8 @@ body {
 }
 
 .hero {
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -291,6 +288,7 @@ body {
 .hero__title {
   margin-bottom: 30px;
   color: var(--logo-secondary-color);
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -328,6 +326,8 @@ body {
 }
 
 .features {
+  padding-top: 94px;
+  padding-bottom: 94px;
   --cards-in-row: 4;
 }
 
@@ -362,6 +362,8 @@ body {
 
 .activities {
   padding-top: 0;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .activities__item {
@@ -386,8 +388,10 @@ body {
 }
 
 .team {
-  background-color: var(--team-section-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
   --cards-in-row: 4;
+  background-color: var(--team-section-bg-color);
 }
 
 .team__card {
@@ -460,6 +464,8 @@ body {
 }
 
 .clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
   --cards-in-row: 6;
 }
 
@@ -659,6 +665,11 @@ body {
 }
 .subscribe__btn:hover, .subscribe__btn:focus {
   background-color: var(--hero-btn-backhround-hover);
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio__btn-list {

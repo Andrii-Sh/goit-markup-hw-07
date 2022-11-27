@@ -1,4 +1,6 @@
 .clients {
+    @include section();
+
     --cards-in-row: 6;
 }
 
